@@ -93,7 +93,15 @@ public class Rational
     // Methods you'll write for homework:
     // Returns whether or not the Rational is a negative number
     public boolean isNegative() { 
-        return false;
+        if ((this.numerator < 0) && (this.denominator < 0)){
+            return false;
+        }
+        else if ((this.numerator < 0) || (this.denominator < 0)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     // Calculates the reciprocal of a Rational number.
